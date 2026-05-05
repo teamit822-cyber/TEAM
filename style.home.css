@@ -139,7 +139,7 @@ body.dark_mode header button.mode_btn{
 body.dark_mode header.logo_nav nav{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 body.dark_mode header.logo_nav,body.dark_mode footer{
     background-color: #2a1f25;
