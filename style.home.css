@@ -131,16 +131,15 @@ body.dark_mode header.logo_nav{
 
 body.dark_mode header h2.logo{
     font-size: 15px;
-    padding-top: 10px;
 }
 
 body.dark_mode header button.mode_btn{
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 body.dark_mode header.logo_nav nav{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 body.dark_mode header.logo_nav,body.dark_mode footer{
     background-color: #2a1f25;
