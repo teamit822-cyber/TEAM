@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Bite & Brew - Dessert Recipes</title>  
+    <link rel="stylesheet" href="color.css">   
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="logo_nav">
+        <h2 class="logo">BITE&BREW</h2>
+        <button class="mode_btn" id="darkModeToggle">
+            <img src="moon.png" id="dark_mode_button"><img src="sun.png" id="light_mode_button" >
+        </button>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <img src="menu.png" id="menu-icon">
+                <img src="close.png" id="close-icon">
+        </label>
+        <nav class="header-right">
+            <a href="index.html" class="active">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="drinks.html">drinks</a>
+            <a href="meals.html">Meals</a>
+            <a href="sweets.html">Sweets</a>
+            <a href="contact_us.html">contact us</a>
+            <a href="unknown.html">unknown</a>
+            <a href="login.html"><img src="login.png"></a>
+        </nav>
+    </header>
+    <div class="textImage" id="textImage">
+        <section class="foo">
+            <div class="foo-content">
+                <span>Soft</span>
+                <h1>Experience Sweet Perfection</h1>
+                <p>A Taste Of Fantasy <br> Discover our delicious recipe.</p>
+                <a href="#products" class="zer">Explore Now</a>
+            </div>
+        </section>
+        <main class="pob" id="products">
+            <h2 class="section-title">PRODUCTS</h2>
+            <div class="products-wrapper">
+                <button class="scroll-btn left" id="scrollLeftBtn">
+                    <i class='bx bx-left-arrow-alt'></i>
+                </button>
+                <section class="recipe" id="recipeContainer">
+                    <div class="card" data-index="0">
+                        <img src="chocolate_cake.jpg" alt="Chocolate Cake" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Chocolate Cake</h3>
+                        </div> 
+                    </div>
+                    <div class="card" data-index="1">
+                        <img src="Red Velvet Strawberry Cheesecake.jpg" alt="Red Velvet" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Red Velvet Strawberry Cheesecake</h3>
+                        </div>
+                    </div>
+                    <div class="card" data-index="2">
+                        <img src="chocolate cookies.jpg" alt="Cookies" class="recipe-img"> 
+                        <div class="in_card">
+                            
+                            <h3>Chocolate Cookies</h3>
+                        </div>
+                    
+                    </div>
+                    <div class="card" data-index="3">
+                        <img src="macarons.jpg" alt="French Macarons" class="recipe-img">
+                        <div class="in_card">
+                            <h3>French Macarons</h3>
+                        </div>
+                    </div>
+                    <div class="card" data-index="4">
+                        <img src="super.jpg" alt="Mermaid Fantasy Cupcakes" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Mermaid Fantasy Cupcakes</h3>
+                        </div>
+                    </div>
+                    <div class="card" data-index="5">
+                        <img src="fruits.jpg" alt="Rainbow Fruit Platter" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Rainbow Fruit Platter</h3>
+                        </div>
+                    </div>
+                    <div class="card" data-index="6">
+                        <img src="cookie sandwiches.jpg" alt="Cookie Sandwiches" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Cookie Sandwiches</h3>
+                        </div>
+                    </div>
+                    <div class="card" data-index="7">
+                        <img src="beklawa.jpg" alt="Pistachio Baklava" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Pistachio Baklava</h3>
+                        </div>
+                    </div>
+                    <div class="card" data-index="8">
+                        <img src="eclere.jpg" alt="Chocolate Éclairs" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Chocolate Éclairs</h3>
+                        </div>
+                    </div>
+                    <div class="card" data-index="9">
+                        <img src="berry cheasecake.jpg" alt="Individual Berry Cheesecake" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Individual Berry Cheesecake</h3>
+                        </div>
+                    </div>
+                    <div class="card" data-index="10">
+                        <img src="pinapple.jpg" alt="Mini Pineapple Upside-Down Cakes" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Mini Pineapple Upside-Down Cakes</h3>
+                        </div>
+                    </div>
+                    <div class="card" data-index="11">
+                        <img src="tramesu.jpg" alt="Classic Tiramisu" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Classic Tiramisu</h3>
+                        </div>
+                        </div>
+                    <div class="card" data-index="12">
+                        <img src="Cinnamon.jpg" alt="Cinnamon Rolls" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Cinnamon Rolls</h3>
+                        </div>
+                    </div>
+                    <div class="card" data-index="13">
+                        <img src="French Toast.jpg" alt="Brioche French Toast with Blueberry Compote" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Brioche French Toast with Blueberry Compote</h3>
+                        </div>
+                    </div>
+                    <div class="card" data-index="14">
+                        <img src="lemon_chesecake.jpg" alt="Lemon Poppy Seed Cheesecake Bites" class="recipe-img">
+                        <div class="in_card">
+                            <h3>Lemon Poppy Seed Cheesecake Bites</h3>
+                        </div>
+                    </div>
+                    <div class="card" data-index="15">
+                        <img src="pestachio_tramisu.jpg" alt="Pistachio Tiramisu" class="recipe-img">
+                        <div class="in_card"><h3>Pistachio Tiramisu</h3>
+                        </div>
+                    </div>
+                </section>
+                <button class="scroll-btn right" id="scrollRightBtn">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </button>
+            </div>
+        </main>
+    </div>
+    
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 style="color: #d97a7a;" id="modalTitle"></h2>
+            <hr>
+            <h3 style="color: #d97a7a;">Ingredients</h3>
+            <p id="modalIngredients"></p>
+            <h3 style="color: #d97a7a;">Instructions</h3>
+            <p id="modalInstructions"></p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="content">
+            <img src="logo.jpeg" alt="">
+        </div>
+        <div class="container">
+            <div class="center">
+                <div class="follow">
+                    <h3>Follow Us</h3>
+                </div>
+                <div class="imgfollow">
+                    <div class="face">
+                        <a href="https://share.google/08VZfMkIFkGEZpKng"><img src="face.jpeg" alt=""></a>
+                    </div>
+                    <div class="insta">
+                        <a href="https://share.google/QwixwR7lSdvBLYtcf"><img src="insta.jpeg" alt=""></a>
+                    </div>
+                    <div class="twitt">
+                        <a href="https://share.google/hXSAnKUgvuGSP0N5Q"><img src="twitt.jpeg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutus">
+                <h3>About Us</h3>
+                <p>Made with love, served with joy. Bite & Brew is your daily destination for delicious recipes that bring people together. Let's make every meal a memory.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="recipe.js"></script>
+</body>
+</html>
