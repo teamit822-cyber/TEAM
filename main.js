@@ -5,13 +5,16 @@ const dark=document.getElementById('dark_mode_button');
 const light=document.getElementById('light_mode_button');
 const body = document.body;
 
-if(localStorage.getItem('theme')==='dark'){
+const theme = localstorage.getItem('theme');
+
+if(theme ==='dark'){
     body.classList.add('dark_mode');
     dark.style.display="none";
+    light.style.display = "block";
 }
-if(localStorage.getItem('theme')==='light'){
+else{
     light.style.display="none";
-    light.style.display="block";
+    dark.style.display="block";
 }
 btn.onclick = function(){
     body.classList.toggle('dark_mode');
