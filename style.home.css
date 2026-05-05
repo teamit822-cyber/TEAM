@@ -1,0 +1,580 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+     
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #fff5f5;
+    box-sizing: border-box;
+    padding-top:70px;
+}
+
+header.logo_nav{
+    position: fixed;
+    padding:20px 10px;
+    display:flex;
+    top:0;
+    justify-content: space-between;
+    width:100%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #f9c7c7;
+    z-index: 10000;
+}
+
+h2.logo{
+    font-size: 20px;
+    font-family:"Luckiest Guy",cursive;
+    font-weight: 400;
+    color: #d97a7a ;
+}
+
+nav a{
+    color: #5e3a3a;
+    padding-left: 0.8rem;
+    font-weight: 500;
+    
+}
+
+nav a:hover{
+    color: #d97a7a ;
+}
+
+nav a.active{
+    color: #b34747;
+    font-weight: 1000;
+}
+
+#check{
+        display:none;
+    }
+    /*removes the check box */
+.icons{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    display: none;
+    right: 10%;
+    cursor: pointer;
+}
+
+#search_box{
+    text-align: center;
+    width: 100px;
+    padding: 8px 15px;
+    border: 2px solid #780000;
+    border-radius: 60px;
+}
+
+#result_of_search{
+    position: absolute;
+    top: 80px;
+    left: 25%;
+    width: 180px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+
+#result_of_search div{
+    padding: 8px;
+}
+
+.mode_btn{
+    background: transparent;
+    border: none;
+    
+}
+
+.mode_btn img{
+   width: 30px;
+   height:30px;
+   background-color: white;
+   border-radius: 50%;
+    
+}
+
+body.dark_mode{
+    padding-top: 0;
+    background-color: #2d1f2a;
+}
+body.dark_mode div.search{
+    display: none;
+}
+body.dark_mode main{
+    margin-left: 100px;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+body.dark_mode header.logo_nav{
+    top:0;
+    left:0;
+    width: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    position: fixed;
+    padding-top: 10px;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+body.dark_mode header h2.logo{
+    font-size: 15px;
+}
+
+body.dark_mode header button.mode_btn{
+    padding-bottom: 20px;
+}
+body.dark_mode header.logo_nav nav{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+body.dark_mode header.logo_nav,body.dark_mode footer{
+    background-color: #2a1f25;
+}
+
+body.dark_mode nav a{
+    display: block;
+    color:#f7c5c5;
+    font-size: 18px;
+}
+
+body.dark_mode i{
+    color: white;
+}
+
+body.dark_mode .scroll_right,body.dark_mode .scroll_left{
+    background-color: #8b5a6b;
+    color: white;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+
+
+}
+
+body.dark_mode main h2,body.dark_mode main h3,body.dark_mode aside h2,body.dark_mode footer p,body.dark_mode footer h3{
+    color: #f2a0a0;
+}
+
+body.dark_mode aside div.aside_container{
+    background-color: #3d2a35;
+    color: #f0d6d6;
+}
+
+body.dark_mode footer,body.dark_mode aside{
+    margin-left: 105px;
+}
+
+img.banner{
+    width: 100%;
+    height: 56%;
+}
+
+div#IMG{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+div#IMG img{
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+}
+h2.imagemaptitle{
+    padding-top: 30px;
+    text-align: center;
+    color: #b34747;
+    font-size: 30px;
+    text-shadow: 2px 2px 0.9px #2a1f2542;
+}
+p.imagemapexplanation{
+    color: #b34747;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+area{
+    cursor: pointer;
+}
+
+article.popular_recipes_article{
+     text-align: center;
+}
+article.popular_recipes_article img{
+    width: 14rem;
+    height: 10rem;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+div.popular_recipes_sections{
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: space-around;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    flex-wrap: nowrap; /*prevents cards from wrapping*/
+    scrollbar-width: none;
+   
+}
+  
+article.popular_recipes_article section{
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 20%;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 450px;
+    overflow: hidden;
+    box-shadow:  0 4px 12px rgba(0,0,0,0.1);
+}
+
+.wrap_popular{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.scroll-controls{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+button.scroll_left img,button.scroll_right img{
+    width: 35px;
+    height: 35px;
+}
+.scroll_left ,.scroll_right {
+    background-color: #ce8e8e;
+    color: #fff;
+    border: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+article.why_choose_us,article.cards1{
+    text-align: center;
+    padding: 101px 0;
+}
+
+article.why_choose_us h2,article.cards1 h2,article.popular_recipes_article h2{
+    font-size: 30px;
+    color: #b34747;
+    text-shadow: #0000003c 3px 2px 1px;
+}
+
+div.why_us_sections{
+    display: flex;
+    flex-direction: row;
+    color:#4a3b3b;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+article.why_choose_us h3{
+    color: #b34747;
+    padding: 0.5rem;
+    font-size: 22px;
+}
+article.why_choose_us img{
+    width: 14rem;
+    height: 10rem;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+article.why_choose_us section
+{
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 20%;
+    max-width: 300px;
+    max-height: 450px;
+}
+
+aside{
+    padding: 1%;
+    color: #c1121f;
+}
+
+header.aside h2{
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+    text-align: center;
+    color: #b34747;
+    font-size: 30px;
+}
+
+div.aside_left_right{
+    margin: 30px 6px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+
+.play_store,.apple_store{
+    width: 50px;
+    height: 50px;
+    padding: 20px 0  0;
+}
+
+.aside_img{
+    width: 20rem;
+    height: 14rem;
+    border-radius: 20%;
+}
+
+footer .content img
+{
+    width: 70px;
+    display: flex;
+    justify-content: left;
+}
+
+footer {
+    background-color: #fdf0f0;
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between; /* اللوجو في طرف والبيانات في طرف */
+    align-items: center; 
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+footer .content img {
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px; 
+}
+
+
+footer .container .center {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 10px;
+}
+
+
+footer .container .imgfollow {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+footer .container .imgfollow img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+footer .container .aboutus {
+    text-align: center;
+}
+
+footer .container .aboutus h3 {
+    margin-bottom: 5px;
+    text-align: left;
+    max-width:200px;
+}
+#container-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    
+}
+ .card-reciper{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+flex: 1 1 250px;
+cursor: pointer;
+transition: ease-in-out;
+
+}
+.card-recipe:hover{
+    background-color: #fff;
+             
+    border-radius: 20px;     
+    overflow: hidden;       
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-decoration: none;   
+    color: #333;             
+    transition: all 0.4s ease; 
+   transform: translateY(-10px);
+}
+.card-recipe {
+    background-color: #fff;
+     max-width: 300px;
+    border-radius: 20px;    
+    overflow: hidden;        
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+    text-decoration: none;  
+    color: #333;             /* لون الكلام */
+    transition: all 0.4s ease; /* سرعة حركة الكارت كله لما نلمسه */
+    text-align: center;
+    padding-bottom: 20px;
+}
+.card-img img {
+    width: 100%;         /* تخلي الصورة تاخد عرض الكارت بالكامل */
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #container-card {
+        flex-direction: column; /* لما تيجي في شاشة الموبايل الكروت تيجي عمودي*/
+        align-items: center;    /* توسيط الكروت بالعرض */
+    }
+
+    .card-recipe {
+        width: 90%;             /* الكارت ياخد 90% من عرض شاشة الموبايل */
+        max-width: none;        /* تلغي الحد الأقصى للعرض */
+    }
+
+}
+
+@media (min-width:901px){
+    .scroll-controls{
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+
+    .icons{
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display:none;
+    }
+
+    .icons #close-icon {
+        display:none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display:block;
+    }
+
+    nav{
+        position:absolute;
+        top:100%;
+        left:0;
+        background-color: rgba(198, 175, 175, 0.712);
+        width:100%;
+        height:0;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+   
+    body.dark_mode header label.icons{
+        display: none;
+    }
+    body.dark_mode nav{
+        position: static;
+        background: transparent;
+        height: auto;
+        left: 0;
+    }
+
+    body.dark_mode header.logo_nav nav a{
+        font-size: 500;
+        margin: 0;
+        padding: 0;
+    }
+    #check:checked~nav {
+        height:24rem;
+    }
+
+    nav a{
+        display: block;
+        margin: 1.5rem 0;  
+        font-size:1.2em;
+        text-align: center;
+    }
+
+    nav a:hover{
+        background-color: #f4eddaa9;
+    }
+
+    article.why_choose_us img{
+    width: 14rem;
+    height: 10rem;
+    }
+
+    article.why_choose_us{
+    gap: 0.5rem;
+    }
+
+    article.why_choose_us section
+    {
+    padding: 0.5rem;
+    border-radius: 10%;
+    }
+
+    div.aside_container{
+        font-size: 20px;
+    }
+    
+    .aside_img{
+    width: 10rem;
+    height: 14rem;
+    border-radius: 20%;
+    }
+
+    body.dark_mode div.aside_container{
+        font-size: 17px;
+    }
+    body.dark_mode img.play_store,body.dark_mode img.apple_store{
+    width: 40px;
+    height: 40px;
+    padding: 20px 0  0;
+}
+}
