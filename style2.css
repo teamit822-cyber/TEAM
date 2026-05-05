@@ -323,7 +323,7 @@ nav a.active{
 body.dark_mode header.logo_nav{
     top:0;
     left:0;
-    width: 170px;
+    width: 100px;
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
