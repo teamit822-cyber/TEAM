@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header class="logo_nav">
+        <h2 class="logo">BITE&BREW</h2>
+
+        <button class="mode_btn" style="background: none; border: none; cursor: pointer; font-size: 1.5rem; margin-right: 15px;">
+            <img src="moon.png" id="dark_mode_button"><img src="sun.png" id="light_mode_button" > </button>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+        <img src="menu.png" id="menu-icon">
+        <img src="close.png" id="close-icon">    
+ </label>
+
+        <nav class="header-right">
+            <a href="home.html">Home</a>
+            <a href="breakfast.html" class="active">Breakfast</a>
+            <a href="Drinks.html">Drinks</a>
+            <a href="meals.html">Meals</a>
+            <a href="sweets.html">Sweets</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="SingUp.html">singup</a>
+            <a href="index.html"><img src="login.png"></a>
+        </nav>
+    </header>
+
+    <div class="hi">
+        <div class="Textbox">
+            <h1>The Breakfast Recipes</h1>
+            <p>Start your day with our delicious and easy-to-make morning recipes. Find more delicious recipes, choose any one.</p>
+        </div>
+    </div>
+
+    <main class="split">
+        <section class="Recipeside">
+            <div class="cards">
+                <div class="card" onclick="openModal('omelette')">
+                    <img src="1.png" alt="Spinach Omelette">
+                    <h3>Spinach Omelette</h3>
+                </div>
+                <div class="card" onclick="openModal('toast')">
+                    <img src="2.png" alt="Savory Egg Toast">
+                    <h3>Savory Egg Toast</h3>
+                </div>
+                <div class="card" onclick="openModal('manakish')">
+                    <img src="3.png" alt="Cheese Manakish">
+                    <h3>Cheese Manakish</h3>
+                </div>
+                <div class="card" onclick="openModal('fava_beans')">
+                    <img src="4.png" alt="Spiced Fava Beans">
+                    <h3>Spiced Fava Beans</h3>
+                </div>
+                <div class="card" onclick="openModal('french_toast')">
+                    <img src="5.png" alt="French Toast">
+                    <h3>French Toast</h3>
+                </div>
+                <div class="card" onclick="openModal('beetroot_salad')">
+                    <img src="6.png" alt="Beetroot Salad">
+                    <h3>Beetroot Salad</h3>
+                </div>
+                <div class="card" onclick="openModal('shakshuka')">
+                    <img src="7.png" alt="Shakshuka">
+                    <h3>Shakshuka</h3>
+                </div>
+                <div class="card" onclick="openModal('cheese_zaatar')">
+                    <img src="8.png" alt="Cheese and Za'atar Pie">
+                    <h3>Cheese and Za'atar Pie</h3>
+                </div>
+                <div class="card" onclick="openModal('sourdough')">
+                    <img src="9.png" alt="Sourdough Bread">
+                    <h3>Sourdough Bread</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="videoside">
+            <div class="videowrapper">
+                <div class="videotext">
+                    <p>If you want to learn and see more recipes, click here:
+                    <a href="https://youtu.be/tGFp1wJrjuI?si=vBbGssZwKBZEhRyn" class="videolink">Watch More Recipes</a> </p>
+                </div>
+                <video controls class="customvideo">
+                    <source src="vdio.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <div id="recipeModal" class="modal">
+        <div class="modalcontent">
+            <span class="closebtn" onclick="closeModal()">&times;</span>
+            <div class="recipedetails">
+                <h2 id="modalTitle">Meal Title</h2>
+                <h3>Ingredients</h3>
+                <ul id="modalIngredients"></ul>
+                <h3>How to Prepare</h3>
+                <ol id="modalInstructions"></ol>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="content">
+            <img src="logofoot.jpeg" alt="Logo">
+        </div>
+        <div class="container">
+            <div class="center">
+                <div class="follow">
+                    <h3>Follow Us</h3>
+                </div>
+                <div class="imgfollow">
+                    <div class="face">
+          <a href="https://share.google/08VZfMkIFkGEZpKng"><img src="facebook.jpeg" alt=""></a></div>
+                    <div class="insta"><a href="https://share.google/QwixwR7lSdvBLYtcf"><img src="insta.jpeg" alt=""></a></div>
+                    <div class="twitt"> <a href="https://share.google/hXSAnKUgvuGSP0N5Q"><img src="twitter.jpeg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="aboutus">
+                <h3>About Us</h3>
+                <p>Made with love, served with joy. Bite & Brew is your daily destination for delicious recipes that bring people together.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
