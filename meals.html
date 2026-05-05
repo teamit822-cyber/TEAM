@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bite & Brew</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+   <header>
+    <header class="logo_nav">
+            <h2 class="logo">BITE&BREW</h2>
+            <div class="search">
+                <input type="text" placeholder="enter recipe ..." id="search_box">
+                <div id="result_of_search"></div>
+            </div>
+
+            <button class="mode_btn" id="mode_btn"><img src="MOOND.png" class="bx bx-moon" id="dark_mode_button"><img src="sun (1).png" class="bx bx-sun" id="light_mode_button" ></button>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <img src ="menu.jpeg"class='bx bx-menu' id="menu-icon">
+                <img src ="close-icon.jpeg"class='bx bx-x' id="close-icon">
+            </label>
+
+            <nav class="header-right">
+                <a href="index2.html" class="active">Home</a>
+                <a href="breakfast.html">Breakfast</a>
+                <a href="drinks.html">drinks</a>
+                <a href="meals.html" >Meals</a>
+                <a href="sweets.html" >Sweets</a>
+                <a href="contact_us.html" >contact us</a>
+                <a href="unknown.html" >unknown</a>
+                <a href="login.html" ><img src="log-in.jpeg" class='bx bx-log-in'></a>
+            </nav>
+
+    </header>
+    <section class="icon meals">
+        <div class="meals">
+            <h2 class="headm"><img class ="photo" src="dinner.png">Meals</h2>
+        </div>
+        <hr>
+    </section>
+      <section class="end">
+        <span class="main">
+    <div class="card">
+  <img class="img" src="7pizza.png" alt="Margherita Pizza">
+  <h3>Margherita Pizza</h3>
+  <button class="open-btn" onclick="openModal('modal1')">see details</button>
+</div>
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+    <h3>Margherita Pizza</h3>
+    <p><strong>
+    Ingredients For the Dough:
+</strong><pre>
+    500g strong white flour
+1 tsp salt
+1 tsp dried yeast
+200ml warm water
+1 tbsp olive oil
+For the Sauce:
+400g passata (or crushed tomatoes)
+Fresh basil leaves
+1 clove garlic (crushed, optional)
+Salt and pepper to taste
+For Topping:
+250g fresh mozzarella cheese
+Extra virgin olive oil for drizzling</pre></p>
+    <p><strong>
+Combine flour, salt, and yeast.
+Add water and oil; mix, then knead for 5 minutes. 
+Cover and rest for 30+ minutes.
+Mix passata, garlic, basil, salt, and pepper in a bowl.
+Preheat oven to 240°C. Divide dough into two, then roll each into thin 25cm rounds.
+Place dough on a preheated baking sheet, spread sauce thinly,
+ top with torn mozzarella, and drizzle with olive oil.
+ Bake for 8–10 minutes until the crust is golden and crispy.
+ Garnish with fresh basil, slice, and serve hot.</strong></p>
+  </div>
+</div>
+      <div class="card">
+  <img class="img" src="pasta.png" alt="Mexican Chicken Pasta">
+  <h3>Mexican Chicken Pasta</h3>
+  <button class="open-btn" onclick="openModal('modal2')">see details</button>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+    <h2>Mexican Chicken Pasta</h2>
+    <p><strong>
+    Ingredients For the Dough:
+</strong><pre>
+Pasta: 500g of your preferred shape 
+(Penne or Spaghetti works well).
+Chicken: 500g of chicken breast,
+ cut into strips.
+Vegetables:
+1 large onion, sliced.
+Bell peppers (red, green, and yellow),
+ sliced into strips.
+Mushrooms, fresh or canned (optional).
+½ cup canned corn.
+Seasoning & Sauce:
+3 tbsp olive oil or vegetable oil.
+1 tsp minced garlic.
+2 tbsp tomato paste.
+Spices: Salt, black pepper, paprika, 
+curry powder (optional), and oregano.
+Optional: A splash of soy sauce or
+ shredded mozzarella cheese for topping.</pre></p>
+    <p><strong>
+Boil 500g of pasta until al dente.
+Sauté 500g of chicken breast strips with 3 tbsp oil, 1 tsp minced garlic, salt, pepper, paprika, and curry powder until golden.
+Stir in 1 sliced onion, bell peppers, mushrooms, and ½ cup corn. Cook until slightly tender.
+Mix in 2 tbsp tomato paste and ½ cup water/broth. Simmer briefly.
+Toss the cooked pasta into the pan until coated.
+Top with mozzarella and broil until melted and golden. Serve hot.</strong></p>
+</div>  
+</div>
+ <div class="card">
+  <img class="img" src="Chicken CrispyCrepe.png" alt="Chicken Crispy Crepe">
+  <h3>Chicken Crispy Crepe</h3>
+  <button class="open-btn" onclick="openModal('modal3')">see details</button>
+</div>
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+    <h2>Chicken Crispy Crepe</h2>
+    <p class="ing"><strong>
+    Ingredients For the Dough:
+</strong><pre>
+For the Crepe Batter: Flour, milk, eggs,
+ a pinch of salt, and a tablespoon of oil.
+For the Crispy Chicken: Chicken breast strips,flour
+, breadcrumbs(or crushed cornflakes for extra crunch),
+beaten eggs, and spices (salt, black pepper, garlic powder, paprika).
+For the Filling: Shredded lettuce, sliced tomatoes,
+ pickles,cheese (cheddar or mozzarella), and your 
+ choice of sauce (mayonnaise, ketchup, or ranch).</pre></p>
+    <p><strong>
+Season chicken strips, coat in flour (mixed with cornstarch for extra crunch), dip in beaten eggs, then breadcrumbs. Deep-fry until golden.
+Blend flour, milk, eggs, salt, and oil. Cook thin layers in a non-stick pan until set.
+ Spread sauce on a crepe, add chicken, lettuce, tomatoes, pickles, and cheese.
+ Fold into a triangle or roll, then toast in a pan until the cheese melts and the exterior is crisp. Serve warm..</strong></p>
+</div>  
+</div>
+ <div class="card">
+  <img class="img" src="Koshary-removebg-preview (1).png" alt="Koshary">
+  <h3>Koshary</h3>
+  <button class="open-btn" onclick="openModal('modal4')">see details</button>
+</div>
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+    <h2>Koshary</h2>
+    <p><strong>
+    Ingredients For the Dough:
+</strong><pre>
+The Base:
+1 cup brown lentils (soaked for an hour).
+1 cup rice (washed and drained).
+2 cups small pasta (like macaroni).
+1 can chickpeas (or 1 cup boiled).
+The Crispy Onions:
+3 large onions, thinly sliced.
+Oil for frying.
+The Tomato Sauce:
+2 cups tomato juice/puree.
+3 tbsp tomato paste.
+4 cloves garlic, minced.
+1 tsp cumin, salt, and pepper to taste.
+1 tbsp vinegar.</pre></p>
+    <p><strong>
+Fry sliced onions in oil until golden and crispy; drain and reserve the flavored oil.
+ Boil lentils until tender, cook pasta al dente, and steam rice until fluffy. Combine with boiled/canned chickpeas.
+Sauté minced garlic in a little of the reserved onion oil. Add tomato paste, tomato juice, vinegar, and spices; simmer until thickened (10–15 mins).
+ Layer rice, lentils, and pasta in a bowl. Add chickpeas, top with hot tomato sauce, and garnish with crispy onions.
+ Serve with a side of "Dakka" (garlic, vinegar, lemon, and cumin) and spicy chili sauce.</strong></p>
+</div>  
+</div>
+ <div class="card">
+  <img class="img" src="salmon-removebg-preview.png" alt="salmon">
+  <h3>salmon</h3>
+  <button class="open-btn" onclick="openModal('modal5')">see details</button>
+</div>
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal5')">&times;</span>
+    <h2>salmon</h2>
+    <p><strong>
+    Ingredients For the Dough:
+</strong><pre>
+Salmon fillet (fresh or thawed).
+Marinade:
+1 tbsp olive oil.
+1 tbsp fresh lemon juice.
+1 clove garlic, minced.
+Salt and black pepper to taste.
+Optional herbs: Dried rosemary, 
+thyme, or a pinch of paprika.</pre></p>
+    <p><strong>
+Preheat oven to 200°C (400°F). Pat salmon fillet dry.
+Whisk olive oil, lemon juice, garlic, and herbs; brush evenly over the salmon.
+Place skin-side down on a lined baking sheet. Bake for 12–15 minutes (broil for the last 1–2 minutes for a golden finish).
+Best enjoyed hot with lemon, fresh herbs, and a side of rice or roasted vegetables.
+The salmon is ready when it flakes easily with a fork.</strong></p>
+</div>  
+</div>
+
+ <div class="card">
+  <img class="img" src="Butter Chicken (1).png" alt="Butter Chicken">
+  <h3>Butter Chicken</h3>
+  <button class="open-btn" onclick="openModal('modal6')">see details</button>
+</div>
+<div id="modal6" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal6')">&times;</span>
+    <h2>Butter Chicken</h2>
+    <p><strong>
+    Ingredients For the Dough:
+</strong><pre>
+Chicken Marinade: 500g chicken breast (cubed),
+ ½ cup yogurt,1 tsp each of grated ginger,
+minced garlic,paprika, garam masala,and salt.
+​The Sauce: 3 tbsp butter, 1 finely chopped onion,
+ 2 cloves minced garlic, 1 tsp each of (ginger,
+  paprika, turmeric, garam masala, coriander powder),
+  1 cup tomato puree/juice, ½ cup heavy cream, fresh coriander for garnish.</pre></p>
+    <p><strong>
+Mix chicken with yogurt and spices; refrigerate for at least 1 hour.
+Sauté chicken until golden and cooked through; set aside.
+Sauté onions, garlic, ginger, and spices in butter. Add tomato puree and simmer until thickened.
+Stir in heavy cream, add the cooked chicken, and simmer for 5 minutes.
+Garnish with fresh coriander and serve with Naan or Basmati rice.
+ Blend and strain the sauce before adding the chicken for a silky, restaurant-quality texture.</strong></p>
+</div>  
+</div>
+ <div class="card">
+  <img class="img" src="noddles.png" alt="noddles">
+  <h3>Noddles</h3>
+  <button class="open-btn" onclick="openModal('modal7')">see details</button>
+</div>
+<div id="modal7" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal7')">&times;</span>
+    <h2>Noddles</h2>
+    <p><strong>
+    Ingredients For the Dough:
+</strong><pre>
+2 cups all-purpose flour.
+2 large eggs.
+A pinch of salt.
+1–2 tbsp water (if needed).</pre></p>
+    <p><strong>
+Mix flour, salt, and eggs into a firm dough. Knead until smooth and let rest for 30 minutes.
+Roll the dough until very thin, dust with flour, and cut into thin strips.
+Boil in salted water for 2–3 minutes until they float, then drain.
+ Toss immediately into a stir-fry with sauce and vegetables.
+ Add a half-teaspoon of turmeric or curry powder to the flour for a vibrant golden color and extra flavor.</strong></p>
+</div>  
+</div>
+ <div class="card">
+  <img class="img" src="Burger_And_Sandwich_PNG-removebg-preview.png" alt="burger">
+  <h3>Beef Burger</h3>
+  <button class="open-btn" onclick="openModal('modal8')">see details</button>
+</div>
+<div id="modal8" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal8')">&times;</span>
+    <h2>Beef Burger</h2>
+    <p><strong>
+    Ingredients For the Dough:
+</strong><pre>
+Meat: 500g ground beef
+ (use 80% lean / 20% fat for the best juiciness).
+Seasoning: Salt and black pepper (keep it simple).
+Optional: Garlic powder, onion powder, or a dash of Worcestershire sauce.
+Serving: Burger buns, cheddar cheese slices, lettuce,
+ tomato, onion, pickles, mayonnaise, and ketchup.</pre></p>
+    <p><strong>
+Form meat into equal balls, press into 2cm patties, and make a thumb indentation in the center to prevent puffing.
+Refrigerate patties for 20–30 minutes to help them hold their shape.
+Sear in a skillet with oil over medium-high heat for 3–4 minutes per side. Do not press down with a spatula.
+Add a cheese slice one minute before cooking is finished; cover the pan briefly to melt.
+Butter the buns and toast until golden.
+Layer mayo, ketchup, lettuce, tomato, and the patty on the bun.
+Salt the outside of the patty right before cooking to ensure a tender texture.
+Handling: Be gentle; do not overwork the meat.</strong></p>
+</div>  
+</div>
+ <div class="card">
+  <img class="img" src="Dragon_Roll_Recipe_ドラゴンロール-removebg-preview.png"alt="sushi">
+  <h3>Sushi</h3>
+  <button class="open-btn" onclick="openModal('modal9')">see details</button>
+</div>
+<div id="modal9" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal9')">&times;</span>
+    <h2>sushi</h2>
+    <p><strong>
+    Ingredients For the Dough:
+</strong><pre>
+Sushi Rice: 2 cups Japanese short-grain rice 
+(rinsed until water runs clear).
+Seasoning: 1/4 cup rice vinegar, 1 tbsp sugar, 1 tsp salt.
+Fillings: Nori (seaweed sheets), cucumber strips, avocado,
+ imitation crab, or sushi-grade raw fish (tuna/salmon).
+Serving: Soy sauce, pickled ginger, and wasabi.</pre></p>
+    <p><strong>
+Cook rice and fold in a mixture of rice vinegar, sugar, and salt; let cool to room temperature.
+Place nori on a bamboo mat and spread a thin layer of rice, leaving a 2cm border at the top.
+ Arrange fillings in the center, roll tightly using the mat, and seal the edge with a little water.
+ Use a sharp, damp knife to cut the roll into 6–8 even pieces, cleaning the blade between cuts.
+Pro Tips
+Keep fingers damp with water and vinegar to prevent sticking.
+Use moderate amounts of filling to ensure a tight seal.
+Notes/Use a very sharp knife to avoid crushing the roll while slicing.</strong></p>
+</div>  
+</div>
+ <div class="card">
+  <img class="img" src="شاورما-removebg-preview.png"alt="Shawarma">
+  <h3>Shawarma</h3>
+  <button class="open-btn" onclick="openModal('modal10')">see details</button>
+</div>
+<div id="modal10" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal10')">&times;</span>
+    <h2>Shawarma</h2>
+    <p><strong>
+    Ingredients For the Dough:
+    </strong></p>
+Protein: 500g chicken breast or thigh (thinly sliced).
+​Marinade: 3 tbsp olive oil, 2 tbsp yogurt, 
+1 tbsp lemon juice, 2 cloves minced garlic, 1 tsp cumin,
+1 tsp coriander, 1/2 tsp turmeric, 1/2 tsp cinnamon, salt, and pepper.
+​Serving: Pita bread or tortillas, tahini sauce or garlic sauce,
+ shredded lettuce, sliced tomatoes, and pickles.</pre></p>
+    <p><strong>
+Combine marinade ingredients with thinly sliced chicken. Refrigerate for at least 2–4 hours (overnight is best).
+ Sear chicken in a hot skillet with a little oil in batches until golden and cooked through (6–8 minutes).
+Warm bread, spread with garlic or tahini sauce, add chicken and vegetables, then roll tightly.
+Pro Tips
+ Cut chicken into thin, uniform strips against the grain for better texture.
+ Use high heat to achieve a charred, rotisserie-style flavor.</strong></p>
+</div>  
+</div>
+ <div class="card">
+  <img class="img" src="Crispy_Fried_Chicken-removebg-preview.png"alt="Crispy Fried Chicken">
+  <h3>Crispy Fried Chicken</h3>
+  <button class="open-btn" onclick="openModal('modal11')">see details</button>
+</div>
+<div id="modal11" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal11')">&times;</span>
+    <h2>Crispy Fried Chicken</h2>
+    <p><strong>
+    Ingredients For the Dough:
+    </strong></p>
+Chicken: 1kg chicken pieces (thighs and drumsticks are best).
+Buttermilk Marinade: 2 cups buttermilk (or milk mixed with 1 tbsp vinegar),
+ 1 tsp salt, 1 tsp black pepper, 1 tsp garlic powder.
+Flour Coating: 2 cups all-purpose flour, 1/2 cup cornstarch
+ (the secret to crispiness), 1 tsp salt, 1 tsp paprika, 1 tsp garlic powder,
+  1 tsp onion powder, 1/2 tsp cayenne pepper (optional for heat).
+Frying: Vegetable oil for deep frying.</pre></p>
+    <p><strong>
+Soak chicken in a buttermilk and spice mixture for at least 4 hours (or overnight) to tenderize.
+Coat the chicken thoroughly in a mixture of flour, cornstarch, and spices, shaking off the excess.
+Deep-fry in 175°C oil in batches for 12–15 minutes until golden brown and the internal temperature reaches 74°C.
+Let the chicken rest on a wire rack or paper towels for 5 minutes before serving to remove excess oil.
+Pro Tips
+Essential for creating a long-lasting, crispy crust.
+ Maintain oil at 175°C to avoid greasy or burnt chicken.
+Repeat the buttermilk and flour steps if you prefer an extra-thick, crunchy coating.</strong></p>
+</div>  
+</div>
+
+ <div class="card">
+  <img class="img" src="sausage feteer.png"alt="sausage feteer">
+  <h3>sausage feteer</h3>
+  <button class="open-btn" onclick="openModal('modal12')">see details</button>
+</div>
+<div id="modal12" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal12')">&times;</span>
+    <h2>sausage feteer</h2>
+    <p><strong>
+    Ingredients For the Dough:
+    </strong></p>
+Dough: Pizza dough, puff pastry, or phyllo pastry (Goulash) sheets.
+Filling: 250–300g oriental sausage (cut into small pieces),
+ 1 onion (sliced), 1 green bell pepper (diced), 1 tomato (diced, seeded),
+  salt, black pepper, and meat spices.
+Toppings: Sliced black olives and shredded mozzarella or mixed cheese.</pre></p>
+    <p><strong>
+Brown the sausage in a skillet, add vegetables and spices, cook until flavors meld, and let cool.
+* Pizza Place half in a greased pan, add filling and cheese, cover with the remaining dough, and seal edges.
+Layer buttered sheets, add filling and cheese, then cover with remaining sheets.
+Preheat oven to 200°C. Brush the top with egg or ghee and bake for 20–25 minutes until golden.
+Pro Tips
+Drain excess liquid from the filling to keep the crust crispy.
+Combine mozzarella with a sharp cheese (like Rumi) for a richer taste.
+Texture: When using phyllo, add a milk-and-egg mixture halfway through baking for a soft, delicious crust.</strong></p>
+</div>  
+</div>
+
+ <div class="card">
+  <img class="img" src="samosaa-removebg-preview.png"alt="samosa">
+  <h3>Samosa</h3>
+  <button class="open-btn" onclick="openModal('modal13')">see details</button>
+</div>
+<div id="modal13" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal13')">&times;</span>
+    <h2>Samosa</h2>
+    <p><strong>
+    Ingredients For the Dough:
+    </strong></p>
+Pastry: Samosa wrappers or puff pastry sheets (cut into strips).
+Filling: 2 boiled potatoes (mashed), 1/2 cup cooked peas,
+ 1 finely chopped onion, 1 tsp cumin, 1 tsp coriander powder,
+  1/2 tsp chili powder, salt, and fresh cilantro.
+Binding: A simple paste made of 1 tbsp flour mixed with 1 tbsp water.
+Frying: Vegetable oil for deep frying.</pre></p>
+    <p><strong>
+Sauté onions, add spices, then mix in mashed potatoes and peas. Season with salt and cilantro, then let the mixture cool completely.
+ Fold a pastry strip into a triangle pocket and fill with the potato mixture.
+Close the opening, brush edges with a flour-water paste, and press firmly to seal.
+Deep-fry in medium-hot oil until golden brown and crispy (4–5 minutes). Drain on paper towels.
+Pro Tips
+ Always use cool filling to keep the pastry crisp and prevent it from tearing.
+Maintain a steady, moderate heat; if the oil is too hot, the exterior will burn before the inside is cooked.
+ Ensure edges are tightly sealed with flour paste to prevent the samosas from bursting during frying.</strong></p>
+</div>  
+</div>
+ <div class="card">
+  <img class="img" src="Hawawshi meat"alt="Hawawshi meat">
+  <h3>Hawawshi meat</h3>
+  <button class="open-btn" onclick="openModal('modal14')">see details</button>
+</div>
+<div id="modal14" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal14')">&times;</span>
+    <h2>Hawawshi meat</h2>
+    <p><strong>
+    Ingredients For the Dough:
+    </strong></p>
+Meat Mixture: 500g minced beef (with 20% fat content is ideal for juiciness),
+ 1 finely grated onion, 1 small green bell pepper (finely chopped),
+  1 chili pepper (optional), 2 tbsp chopped fresh parsley.
+Seasoning: 1 tsp salt, 1/2 tsp black pepper, 1/2 tsp ground coriander,
+ 1/2 tsp allspice (or "Baharat"), and a pinch of chili flakes.
+Bread: 4–5 fresh pita bread loaves (cut open slightly at one side to create a pocket).
+Cooking: 2–3 tbsp ghee or vegetable oil for brushing.</pre></p>
+    <p><strong>
+Mix minced beef, grated onion, peppers, parsley, and spices. Marinate for 30 minutes for better flavor.
+Spread the meat mixture thinly and evenly inside pita bread pockets.
+Coat both sides of the bread generously with ghee or oil to ensure a golden, crispy crust.
+Bake in the oven at 200°C for 15–20 minutes (flipping halfway) OR cook in a skillet over medium heat for 5–7 minutes per side.
+Wrap in foil for a few minutes before serving to achieve the perfect texture; serve with pickles or tahini.
+Pro Tips
+Use beef with at least 20% fat; the fat flavors the bread as it melts during cooking.
+Keep the meat layer thin to ensure it cooks through before the bread burns.
+ For maximum crunch in the oven, place the pita directly on the oven rack.</strong></p>
+</div>  
+</div>
+ <div class="card">
+  <img class="img" src="Bowl_of_Italian_pasta_fettuccine_Alfredo_with_-removebg-preview.png"alt="Creamy White Sauce Pasta">
+  <h3>Creamy White Sauce Pasta</h3>
+  <button class="open-btn" onclick="openModal('modal15')">see details</button>
+</div>
+<div id="modal15" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal15')">&times;</span>
+    <h2>Creamy White Sauce Pasta</h2>
+    <p><strong>
+    Ingredients For the Dough:
+    </strong></p>
+Pasta: 250g Fettuccine or Penne.
+Sauce: 2 tbsp butter, 2 cloves minced garlic, 2 tbsp all-purpose flour,
+1.5 cups whole milk (or half-and-half for extra creaminess), 1/2 cup grated Parmesan cheese.
+Seasoning: Salt, black pepper, and a pinch of nutmeg or dried oregano.
+Optional: Sautéed mushrooms or grilled chicken breast slices.</pre></p>
+    <p><strong>
+Cook pasta al dente, reserve 1/2 cup of cooking water, and drain.
+Melt butter, sauté garlic, and whisk in flour to create a smooth paste without browning.
+Gradually whisk in milk over medium heat until thickened, then stir in Parmesan until melted. Season with salt, pepper, and nutmeg.
+Toss pasta into the sauce, adding a splash of reserved water if needed for the right consistency.
+Pro Tips
+Use reserved pasta water or extra milk to thin the sauce if it becomes too thick.
+Use freshly grated Parmesan for better melting and flavor.
+Cook pasta al dente to prevent it from becoming mushy when tossed with the sauce.</strong></p>
+</div>  
+</div>
+ <div class="card">
+  <img class="img" src="Roasted_Chicken-removebg-preview.png"alt="Roasted Chicken">
+  <h3>Roasted Chicken</h3>
+  <button class="open-btn" onclick="openModal('modal16')">see details</button>
+</div>
+<div id="modal16" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('modal16')">&times;</span>
+    <h2>Roasted Chicken</h2>
+    <p><strong>
+    Ingredients For the Dough:
+    </strong></p>
+Chicken: 1 whole chicken (or 1kg of pieces like drumsticks and thighs).
+Marinade: 1/4 cup olive oil, 3 tbsp yogurt (for tenderness), 
+juice of 1 lemon, 3 cloves minced garlic, 1 tbsp tomato paste.
+Seasoning: 1 tsp salt, 1/2 tsp black pepper, 1 tsp paprika,
+1tsp ground coriander, 1/2 tsp cumin, and a pinch of dried oregano.</pre></p>
+    <p><strong>
+Whisk olive oil, yogurt, lemon juice, garlic, tomato paste, and spices until smooth.
+Coat the chicken thoroughly inside and out; refrigerate for at least 6 hours to allow flavors to penetrate.
+* Oven: Roast at 200°C for 45–60 minutes until golden and juices run clear.
+Cook over medium-high heat for 15–20 minutes until charred and cooked through.
+Smoke (Optional): Trap smoke from a piece of glowing charcoal under foil for 5 minutes for an authentic smoky flavor.
+Pro Tips
+Use yogurt to break down meat proteins, ensuring the chicken remains juicy.
+ Pat the chicken dry with paper towels before marinating to achieve a crispier finish.
+ Use a meat thermometer to ensure an internal temperature of 74°C (165°F).</strong></p>
+</div>  
+</div>
+</span>
+    <script src="script.js"></script>
+    <footer>
+            <div class="content">
+                <img src="logofoot.jpeg" alt="">
+            </div>
+            <div class="container">
+                <div class="center">
+                    <div class="follow">
+                        <h3>Follow Us</h3>
+                    </div>
+
+                    <div class="imgfollow">
+                        <div class="face">
+                            <img src="facebook.jpeg" alt="">
+                        </div>
+                        <div class="insta">
+                            <img src="insta.jpeg" alt="">
+                        </div>
+                        <div class="twitt">
+                            <img src="twitter.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aboutus">
+                    <h3>About Us</h3>
+                    <p>Made with love, served with joy. Bite & Brew is your daily destination for delicious recipes that
+                        bring people together. Let’s make every meal a memory.</p>
+                </div>
+            </div>
+
+        </footer>
+  </section>
+</body>
+</html>
