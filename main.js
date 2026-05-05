@@ -5,7 +5,7 @@ const dark=document.getElementById('dark_mode_button');
 const light=document.getElementById('light_mode_button');
 const body = document.body;
 
-const theme = localstorage.getItem('theme');
+const theme = localStorage.getItem('theme');
 
 if(theme ==='dark'){
     body.classList.add('dark_mode');
