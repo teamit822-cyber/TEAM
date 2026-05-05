@@ -86,6 +86,7 @@ nav a.active{
 .mode_btn{
     background: transparent;
     border: none;
+    position: relative;
     
 }
 
@@ -93,9 +94,15 @@ nav a.active{
    font-size: 2rem;
    color: #8b5a6b;
    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
     
 }
 
+#light_mode_button{
+    display: none;
+}
 body.dark_mode{
     padding-top: 0;
     background-color: #695e67;
