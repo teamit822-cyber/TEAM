@@ -74,10 +74,9 @@ nav a.active{
         display:none;
     }
    
-.icons{
+.icons img{
     width: 30px;
     height: 30px;
-    color: #fff;
     display: none;
     right: 10%;
     cursor: pointer;
