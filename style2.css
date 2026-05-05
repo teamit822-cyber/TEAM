@@ -169,13 +169,15 @@ overflow-x: auto;
   background: transparent;
   margin-top: 5px;
   padding: 0;
-  padding-left: 10px;
-
+  padding-left:350px;
   cursor: pointer;
   justify-content: center;
   align-items: center;
 
 
+}
+.dark_mode #mode_btn{
+    padding-left: 0;
 }
 a{
     text-decoration: none;
@@ -314,32 +316,10 @@ nav a.active{
     right: 10%;
     cursor: pointer;
 }
-
-#search_box{
-    text-align: center;
-    width: 100px;
-    padding: 8px 15px;
-    border: 2px solid #780000;
-    border-radius: 60px;
-}
-
-#result_of_search{
-    position: absolute;
-    top: 80px;
-    left: 25%;
-    width: 180px;
-    background: white;
-    border-radius: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    z-index: 999;
-}
 .header-right{
     text-decoration: none;
 }
 
-#result_of_search div{
-    padding: 8px;
-}
 body.dark_mode header.logo_nav{
     top:0;
     left:0;
@@ -392,7 +372,4 @@ body.dark_mode i{
 body.dark_mode{
     padding-top: 0;
     background-color: #2d1f2a;
-}
-body.dark_mode div.search{
-    display: none;
 }
