@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bite & Brew</title>
+        <link rel="stylesheet" href="style.home.css">
+        
+    </head>
+    <body>
+        <header class="logo_nav">
+            <h2 class="logo">BITE&BREW</h2>
+            <div class="search">
+                <input type="text" placeholder="enter recipe ..." id="search_box">
+                <div id="result_of_search"></div>
+            </div>
+
+            <button class="mode_btn"><img src="moon.png" id="dark_mode_button"><img src="sun.png" id="light_mode_button" ></button>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <img src="menu.png" id="menu-icon">
+                <img src="close.png" id="close-icon">
+            </label>
+
+            <nav class="header-right">
+                <a href="home.html" class="active">Home</a>
+                <a href="breakfast.html">Breakfast</a>
+                <a href="Drinks.html">drinks</a>
+                <a href="meals.html" >Meals</a>
+                <a href="sweets.html" >Sweets</a>
+                <a href="contactus.html" >contact us</a>
+                <a href="SignUp.html" >unknown</a>
+                <a href="index.html" ><img src="login.png"></a>
+            </nav>
+        </header>
+        <main>
+            
+            <img class="banner" src="hero111.png" al="here lies the banner image">
+            
+            <h2 class="imagemaptitle">VIEW OUR CATEGORIES</h2>
+            <p class="imagemapexplanation">click on food to go to this food pages</p>
+            <div id="IMG">
+                <img src="imagemap.jpeg" alt="image map" usemap="#Imagemap">
+                <map name="Imagemap">
+                    <area shape="circle" coords="380,173,80" href="meals.html" alt="orange juice" title="50 50 desserts recipes">
+                    <area shape="circle" coords="380,380,80" href="sweets.html" alt="sweets"
+                    title="sweet recipes that your family will ask you about">
+                    <area shape="circle" coords="700,200,80" href="Drinks.html" alt="coffe"
+                    title="get the recipes of the best drinks you'll ever drink">
+                    <area shape="circle" coords="190,314,80" href="breakfast.html" alt="cereal" title="snap a beatiful breakfast">
+                </map>
+            </div>
+            <article class="cards1">
+                <h2>VIEW OUR CATEGORIES</h2>
+                <section id="container-card">
+                    <a href="breakfast.html" class="card-recipe">
+                    <div class="card-img">
+                        <img src="breakfast.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>Breakfast</h3>
+                    </div>
+                    </a>
+                    <a href="meals.html" class="card-recipe">
+                        <div class="card-img">
+                            <img src="meals.png" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h3>Meals</h3>
+                        </div>
+                    </a>
+                    <a href="sweets.html" class="card-recipe">
+                        <div class="card-img">
+                            <img src="sweets.png" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h3>Sweets</h3>
+                        </div>
+                    </a>
+                    <a href="drinks.html" class="card-recipe">
+                        <div class="card-img">
+                            <img src="drink.png" alt="">
+                        </div>
+                        <div class="card-info">
+                            <h3>Drinks</h3>
+                        </div>
+                    </a>
+                </section>
+            </article>
+
+             <article class="popular_recipes_article">
+                <h2>OUR MOST POPULAR RECIPES</h2>
+                <div class="wrap_popular">
+                    <button class="scroll_left"><img src="chevron-left-circle.png"></button>
+                    <div class="popular_recipes_sections">
+                        <section id="pancakes">
+                            <h3>PANCAKES</h3>
+                            <img src="pancakes.jpg" alt="pancake">
+                            <p>Fluffy,golden, and ready in minutes. Top with butter and honey for a breakfast that feels like a warm hug.</p>
+                        </section>
+                        <section id="cheese_cake">
+                            <h3>CHEESE CAKE</h3>
+                            <img src="raspberry_cheesecake.jpg" alt="cheese cake">
+                            <p>No cracks.No dry bites. Just dreamy, no-fail cheesecake that tastes like bakery quality.</p>
+                            </section>
+                        <section id="meat_balls">
+                            <h3>MEAT BALLS</h3>
+                            <img src="meat_balls_pasta.jpg" alt="meat balls">
+                            <p>Juicy on the inside, golden on the outside. These meatballs stay tender without falling apart, perfect with pasta or on their own.</p>
+                        </section>
+                        <section id="strawberry_smoothie">
+                            <h3>STRAWBERRY SMOOTHIE</h3>
+                            <img src="stawberry_smoothie.jpg" alt="strawberry smoothie">
+                            <p>Tastes like summer in a glass. Naturally sweet, thick, and ready in 2 minutes.</p>
+                        </section>
+                        <section id="iced_coffee">
+                            <h3>ICED COFFEE</h3>
+                            <img src="iced_coffe.jpg" alt="iced_coffee">
+                            <p>Like your favourite coffe shop, but cheaper and faster. Strong, refreshing, and customizable with milk or cream.</p>
+                        </section>
+                        <section id="basbosa">
+                            <h3>BASBOSA</h3>
+                            <img src="basbosa.jpg" alt="basbosa">
+                            <p>Golden, moist, and soaked in sweet syrup. This traditional dessert has a tender crumb, a butterry finish, and just the right amount of sweetness from every drop of syrup</p>
+                            </section>
+                        <section id="fettuccine_alfredo">
+                            <h3>FETTUCCINE ALFREDO</h3>
+                            <img src="fettuccine_alfredo.jpg" alt="basbosa">
+                            <p>Forget the jarred sauce. This Alfredo comes together in 15 minutes and tastes ten times better. Cozy, comforting, and pure pasta perfection.</p>
+                        </section>
+                        <section id="omelette">
+                            <h3>OMELETTE</h3>
+                            <img src="omelette.jpg" alt="omelette">
+                            <p>From plain eggs to pure magic. Soft, creamy, and loaded with flavour. This is the omelette you'll wake up craving.</p>
+                        </section>
+                    </div>
+                    <button class="scroll_right"><img src="chevron-right-circle.png"></button>
+                </div>
+            </article>
+
+            <article class="why_choose_us">
+                <h2>WHY CHOOSE US ???</h2>
+                <div class="why_us_sections">
+                <section class="reliability">
+                    <h3>RELIABILITY</h3>
+                    <img src="reliability.jpg" alt="reliability">
+                    <p>Every recipe is tasted multiple times before it goes live/you won't waste ingredients on something that doesn't work</p>
+                </section>
+                <section class="simplicity">
+                    <h3>SIMPLICITY</h3>
+                    <img src="simplicity.jpg" alt="reliability">
+                    <p>We skip the long life stories and get straight to cooking. Just recipe, clear instructions,and helpful tips along the way.</p>
+                </section>
+                <section class="community">
+                    <h3>COMMUNITY</h3>
+                    <img src="community.jpg" alt="reliability">
+                    <p>Over 2 million home cooks have used our recipes. Many share their tweaks and wins,so you learn from real people, not just us.</p>
+                </section>
+                </div>
+            </article>
+            
+        </main>
+        <aside>
+                <header class="aside">
+                    <h2><span>App Version is now available!!!</span></h2>
+                </header>
+                <div class="aside_left_right">
+                    <div class="aside_left">
+                        <p>Aside from being available in a website form,</br> you can now download it from appstore</p>
+                        <div class="app_stores">
+                            <a href="https://share.google/JmNv4P9HxFJ4FN2KN"><img class="play_store" src="play_store.png" alt="Google play"></a>
+                            <a href="https://share.google/vWxZRWH3dYDXHcfO0"><img class="apple_store" src="apple_store.png" alt="Apple store"></a>
+                        </div>
+                    </div>
+                    <div class="aside_right">
+                        <img class="aside_img" src="mobile_app.jpg"> 
+                    </div>
+                </div>
+            </aside>
+        <footer>
+            <div class="content">
+                <img src="logofoot.jpg" alt="">
+            </div>
+            <div class="container">
+                <div class="center">
+                    <div class="follow">
+                        <h3>Follow Us</h3>
+                    </div>
+
+                    <div class="imgfollow">
+                        <div class="face">
+                            <a href="https://share.google/08VZfMkIFkGEZpKng"><img src="facebook.jpg" alt=""></a>
+                        </div>
+                        <div class="insta">
+                            <a href="https://share.google/QwixwR7lSdvBLYtcf"><img src="insta.jpg" alt=""></a>
+                        </div>
+                        <div class="twitt">
+                            <a href="https://share.google/hXSAnKUgvuGSP0N5Q"><img src="twitter.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="aboutus">
+                    <h3>About Us</h3>
+                    <p>Made with love, served with joy. Bite & Brew is your daily destination for delicious recipes that
+                        bring people together. Let’s make every meal a memory.</p>
+                </div>
+            </div>
+
+        </footer>
+            <script src="homescript.js"></script>
+        </body>
+</html>
