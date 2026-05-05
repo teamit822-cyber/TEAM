@@ -1,0 +1,883 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+     
+}
+
+.login-page{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background: url("food image2.jpg") no-repeat center center/cover;   /*tasneem*/
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+header.logo_nav{
+    position: fixed;
+    padding:20px 10px;
+    display:flex;
+    top:0;
+    justify-content: space-between;
+    width:100%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #f9c7c7;
+    z-index: 10000;
+}
+
+h2.logo{
+    font-size: 20px;
+    font-family:"Luckiest Guy",cursive;
+    font-weight: 400;
+    color: #d97a7a ;
+}
+
+nav a{
+    color: #5e3a3a;
+    padding-left: 0.8rem;
+    font-weight: 500;
+    
+}
+
+nav a:hover{
+    color: #d97a7a ;
+}
+
+nav a.active{
+    color: #b34747;
+    font-weight: 1000;
+}
+
+#check{
+        display:none;
+    }
+    /*removes the check box */
+.icons{
+    font-size:2.8rem;
+    color: #fff;
+    display: none;
+    right: 10%;
+    cursor: pointer;
+}
+
+
+.mode_btn{
+    background: transparent;
+    border: none;
+    
+}
+
+.mode_btn i{
+   font-size: 2rem;
+   color: #8b5a6b;
+   z-index: 4;
+    
+}
+
+body.dark_mode{
+    padding-top: 0;
+    background-color: #695e67;
+    margin-left: 100px;
+    transition: 0.3s;
+}
+body.dark_mode div.search{
+    display: none;
+}
+
+body.dark_mode header.logo_nav{
+    top:0;
+    left:0;
+    width: 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: #695e67;
+    z-index: 10000;
+}
+
+body.dark_mode header h2.logo{
+    font-size: 15px;
+    
+}
+
+body.dark_mode h2.logo {
+    font-size: 14px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+body.dark_mode header button.mode_btn{
+    padding-bottom: 20px;
+}
+body.dark_mode header.logo_nav nav{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+body.dark_mode header.logo_nav,body.dark_mode footer{
+    background-color: #2a1f25;
+    color: #f7c5c5;
+}
+
+body.dark_mode nav a{
+    display: block;
+    color:#f7c5c5;
+    font-size: 18px;
+}
+
+body.dark_mode i{
+    color: white;
+}
+
+body.dark_mode footer {
+    width: calc(100% - 100px);
+    margin-left: 0;
+}
+
+body.dark_mode.login-page::before{
+    background: rgba(0, 0, 0, 0.7);
+}
+
+body.dark_mode.login-page,body.dark_mode.signup-page{
+    background-image: none !important;
+    background-color:  #695e67!important;     
+    margin-left: 100px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: 0.3s;
+}
+
+
+body.dark_mode.login-page::before {
+    /* background: rgba(0, 0, 0, 0.8);
+    z-index: 0; */
+    display: none !important;
+}
+
+body.dark_mode .card,
+    body.dark_mode .card-signup { 
+    background: rgba(39, 52, 88, 0.9) !important;
+    border: 1px solid #e94560 !important;
+    /* z-index: 3 !important; */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4) !important;
+    margin-top: 50px !important;
+}
+
+body.dark_mode .h2,
+body.dark_mode h2,
+body.dark_mode .h2-signup, 
+body.dark_mode label,
+body.dark_mode .create ,
+body.dark_mode .remember label{
+    color: #f7c5c5 !important;
+}
+
+ */
+
+
+
+body.dark_mode.signup-page {
+    /* background-image: none; */
+    background-color: #60656c;
+    margin-left: 100px;
+}
+
+body.dark_mode nav .header-right{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    margin-top: 50px !important;
+    padding-left: 0 !important;
+}
+
+  
+
+
+
+/*login page*/
+
+
+.card{
+    background: linear-gradient(to bottom,#ecddb6,rgba(185, 6, 6, 0.712));
+    margin-top: 140px;
+    padding: 30px;          /*inner spacing*/
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;      /*vertically*/
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);      /*x=0(الظل في النص افقي), y=12(الظل نازل لتحت), blur(soft),spread color*/
+    animation: slideUp 3s ease forwards;
+}
+
+@keyframes slideUp {
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2{
+    background-color: #d2b48c00;
+    padding-bottom: 40px;           /*space under text*/
+    color: #076060;
+    border-radius: 8px;
+    text-align: center;             /*center text*/
+    font-style: italic;
+    font-size: 40px;
+}
+
+
+.card input{
+    background-color: #e8e0c8;
+    color: black;
+    display: block;               /*each element on new line*/
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.card input:hover{
+    border: #656161;
+}
+.card label{
+    font-size: 20px;
+    color: #074444;
+    font-weight: bold;
+}
+
+.input-group i{                 /*for icons*/
+    padding-top: -10px;
+    margin-right: 15px;          /*space between icon and input*/
+    font-size: 20px;
+}
+
+
+.login-btn{
+    width: 100%;
+    padding: 12px;
+    margin-top: 50px;                /*apace above buttom*/
+    background-color: #076060;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;               /*smooth hover effect*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);    
+}
+
+.login-btn:hover{
+    opacity: 1;                  /*full opacity*/
+    transform: scale(1.02);         
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 0px;
+    padding-right: 10px;         /*right space*/
+    box-sizing: border-box;      /*keep the element size fixed including padding and border*/
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 8px;                   /*space between checkbox and label*/
+    font-size: 13px;
+    color: #2c3e50;
+}
+
+
+.remember input{
+    display: inline-block;    /*allow elements to sit side by side while keeping width and height*/
+    width: auto;
+    margin: 0;
+}
+.remember label{
+    margin: 0;
+    font-size: 18px;
+    cursor: pointer;
+    white-space: nowrap;          /*no line break*/
+}
+
+.create{
+    text-decoration: none;       /*no underline*/
+    font-size: 18px;
+    color: #103e3e;
+}
+.create:hover{
+    color: #0d1c1c;
+}
+
+
+@media (max-width: 800px){
+    .card{
+        width:85%;                           /*to appear the image in sides*/
+        max-width: 320px;
+        padding: 20px;
+        margin-top: 120px auto 20px auto;    /*top right bottom left*/
+    }
+    .card input{
+        width: 100%;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .login-btn{
+        font-size: 16px;
+    }
+    .create,.remember label{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 399px){    /*less than 400 width*/
+    .option{
+        flex-direction: column;         /*the elements column*/
+        align-items: center;            /* remember and forget in center*/
+        gap: 12px;                      /*the distance between remember and forget*/
+    }
+    .remember label, .create{
+        font-size: 14px;
+    }
+    .card{
+        padding: 20px;               /*less the distance in the sides*/
+        width: 85%;                   /*for image */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*contact page*/
+
+.contact-page{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 80px;/*80*/
+    overflow-x: hidden;
+    background-color: #b8a476;
+    /* background-color: rgb(253, 240, 213); */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card{
+    display: flex;
+    width: 80%;
+    min-height: 70vh;
+    height: auto;
+    margin-top: 50px;/*50*/
+    background: linear-gradient(135deg, #2d5362 0%, #E9D4C3 100%);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: slideUp 3s ease forwards;
+}
+
+@keyframes slideUp {
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.image-side{
+    /* width: 50%; */
+    flex: 1;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.image-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-icons{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+
+}
+
+.image-side p{
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.icon-fb{
+    background-color: #3b5998;
+}
+.icon-tw{
+    background-color: #1da1f2;
+}
+.icon-gp{
+    background-color: #db4437;
+}
+.form h3{
+    font-size: 30px;
+    padding-bottom: 40px;
+    color: #780000;
+
+}
+.form{
+    flex: 1;
+    /* width: 50%; */
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form input{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.form textarea{
+    width: 100%;
+    height: 120px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.form button{
+    width: 100%;
+    padding: 15px;
+    background-color: #780000;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form button:hover{
+    background-color: #510e0e;
+}
+
+
+@media (max-width: 768px){
+    .contact-card{
+        flex-direction: column;
+        height: auto;
+        width: 85%;
+        margin: 40px auto ;
+        border-radius: 20px;
+        padding-top: 40px;
+    }
+    .form{
+        padding: 30px 20px;
+        /* order:1; */
+    }
+    .form h3{
+        padding-bottom: 20px; 
+        /* text-align: center; */ 
+        font-size: 24px;
+    }
+    .image-side{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* order: 2; */
+    }
+    .image-side img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .image-icons{
+        position: static;
+        transform:none;
+        margin-top: -10px;
+        bottom: 25px;
+    }
+    .social-icons a{
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 399px) {
+    .form input,.form textarea{
+        font-size: 14px;
+        padding: 12px;
+    }
+    .form button{
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+
+
+
+/*sign up page*/
+
+
+.signup-page{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ead799;
+    background: linear-gradient(to bottom,#ecddb6,rgba(185, 6, 6, 0.712)); 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-signup {
+    
+    background: linear-gradient(135deg, #2d5362 0%, #E9D4C3 100%);
+    margin-top: 140px;
+    padding: 30px;          /*inner spacing*/
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;      /*vertically*/
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);      /*x=0(الظل في النص افقي), y=12(الظل نازل لتحت), blur(soft),spread color*/
+    animation: slideUp 3s ease forwards;
+    z-index: 3;
+}
+@keyframes slideUp {
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.h2-signup{
+    background-color: #d2b48c00;
+    padding-bottom: 40px;           /*space under text*/
+    color: #780000;
+    border-radius: 8px;
+    text-align: center;             /*center text*/
+    font-style: italic;
+    font-size: 40px;
+}
+
+
+
+.card-signup input{
+    background-color: #e8e0c8;
+    color: black;
+    display: block;               /*each element on new line*/
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.card-signup input:hover{
+    border: #656161;
+}
+.card-signup label{
+    font-size: 20px;
+    color: #780000;
+    font-weight: bold;
+}
+
+.input-group i{                 /*for icons*/
+    padding-top: -10px;
+    margin-right: 15px;          /*space between icon and input*/
+    font-size: 20px;
+}
+
+
+
+.signup-btn{
+    width: 100%;
+    padding: 12px;
+    margin-top: 50px;                /*apace above buttom*/
+    background-color: #780000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;               /*smooth hover effect*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);    
+}
+
+.signup-btn:hover{
+    opacity: 1;                  /*full opacity*/
+    transform: scale(1.02);         
+}
+
+
+
+
+
+
+
+@media (max-width: 800px){
+    .card-signup{
+        width:85%;                           /*to appear the image in sides*/
+        max-width: 320px;
+        padding: 20px;
+        margin-top: 120px auto 20px auto;    /*top right bottom left*/
+    }
+    .card input{
+        width: 100%;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .signup-btn{
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 399px){    /*less than 400 width*/
+    .card-signup{
+        padding: 20px;               /*less the distance in the sides*/
+        width: 75%;                   
+    }
+}
+
+
+
+footer .content img
+{
+    width: 70px;
+    display: flex;
+    justify-content: left;
+}
+
+footer {
+    background-color: #fdf0f0;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between; /* اللوجو في طرف والبيانات في طرف */
+    align-items: center; 
+    margin-top: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+/* 2. اللوجو */
+footer .content img {
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 3. الحاوية اللي شيلة الـ Center والـ About Us جنب بعض */
+footer .container {
+    display: flex;
+    flex-direction: row; /* عشان About us و Follow us يبقوا جنب بعض */
+    align-items: flex-start;
+    gap: 50px; /* مسافة بينهم */
+}
+
+/* 4. قسم Follow Us (الكلمة فوق والصور تحتها) */
+footer .container .center {
+    display: flex;
+    flex-direction: column; /* الكلمة فوق والصور تحت */
+    align-items: center;    /* يوسطنهم بالنسبة لبعض */
+    gap: 10px;
+}
+
+/* 5. رص الصور جنب بعض */
+footer .container .imgfollow {
+    display: flex;
+    flex-direction: row; /* الصور جنب بعض */
+    gap: 10px;
+}
+
+/* 6. حجم الصور */
+footer .container .imgfollow img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* 7. قسم About Us */
+footer .container .aboutus {
+    text-align: center;
+}
+
+footer .container .aboutus h3 {
+    margin-bottom: 5px;
+    text-align: left;
+    max-width:200px;
+}
+
+
+
+body.dark_mode.login-page,body.dark_mode.signup-page{
+    background-image: none !important;
+    background-color:  #695e67 !important;     
+    margin-left: 100px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: 0.3s;
+}
+
+
+body.dark_mode.login-page::before {
+    display: none !important;
+}
+
+body.dark_mode .card,
+    body.dark_mode .card-signup { 
+    background: rgba(39, 52, 88, 0.9) !important;
+    border: 1px solid #e94560 !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4) !important;
+    margin-top: 50px !important;
+}
+
+body.dark_mode .h2,
+body.dark_mode h2,
+body.dark_mode .h2-signup, 
+body.dark_mode label,
+body.dark_mode .create ,
+body.dark_mode .remember label{
+    color: #f7c5c5 !important;
+}
+
+ */
+
+
+
+body.dark_mode.signup-page {
+    
+    background-color: #60656c;
+    margin-left: 100px;
+}
+
+body.dark_mode nav .header-right{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    margin-top: 50px !important;
+    padding-left: 0 !important;
+}
+
