@@ -521,18 +521,7 @@ body.dark_mode #modalInstructions {
         max-height: 400px;
         padding: 20px 0;
     }
-     #check:checked~.icons #menu-icon {
-        display:none;
-    }
-
-    .icons #close-icon {
-        display:none;
-    }
-
-    #check:checked~.icons #close-icon {
-        display:block;
-    }
-
+  
     header.logo_nav nav a {
         display: block;
         width: 100%;
