@@ -37,10 +37,7 @@ h2.logo {
     margin-left: 10px;
 }
 
-nav.header-right {
-    display: flex;
-    align-items: center;
-}
+
 
 nav.header-right a {
     color: #5e3a3a;
