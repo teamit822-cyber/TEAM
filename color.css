@@ -84,8 +84,9 @@ header.logo_nav nav a.active {
     display: none;
 }
 
-.icons {
-    font-size: 2rem;
+.icons img{
+    width: 30px;
+    height: 30px;
     color: #d97a7a;
     display: none;
     cursor: pointer;
