@@ -68,10 +68,10 @@ body.dark_mode header.logo_nav {
     left: 0;
     width: 100px;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     height: 100%;
     position: fixed;
-    padding-top: 20px;
+    padding-top: 10px;
     justify-content: flex-start;
     align-content: center;
 }
