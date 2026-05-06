@@ -189,11 +189,11 @@ footer .container .follow h3 { color: #3e2723; }
     body { padding-top: 80px; }
     
     /* تظبيط الدارك مود في الموبايل عشان ميبوظش الشاشة */
-    body.dark_mode { margin-left: 0; }
+    /*body.dark_mode { margin-left: 0; }
     body.dark_mode header.logo_nav { width: 100%; height: auto; flex-direction: row; position: fixed; padding-top: 20px; }
     body.dark_mode header.logo_nav nav.header-right { margin-top: 0; gap: 20px; }
     body.dark_mode header h2.logo { margin-bottom: 0; }
-    body.dark_mode header button.mode_btn { padding-bottom: 0; }
+    body.dark_mode header button.mode_btn { padding-bottom: 0; }*/
     
     .hi { background-position: 80% center; height: 60vh; justify-content: center; padding-left: 0; }
     .Textbox { max-width: 85%; background-color: rgba(255, 255, 255, 0.7); padding: 20px; text-align: center; border-radius: 15px;}
