@@ -506,7 +506,7 @@ body.dark_mode #modalInstructions {
         top: 80px;
         left: 0;
         width: 100%;
-        background-color: #f9c7c7;
+        background-color: rgba(198, 175, 175, 0.712);
         flex-direction: column;
         gap: 0;
         max-height: 0;
@@ -520,7 +520,18 @@ body.dark_mode #modalInstructions {
         max-height: 400px;
         padding: 20px 0;
     }
-    
+     #check:checked~.icons #menu-icon {
+        display:none;
+    }
+
+    .icons #close-icon {
+        display:none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display:block;
+    }
+
     header.logo_nav nav a {
         display: block;
         width: 100%;
