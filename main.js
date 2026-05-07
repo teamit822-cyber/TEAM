@@ -61,7 +61,7 @@ function signup(){
     localStorage.setItem("phone",phone);
     localStorage.setItem("pass",pass);
     alert("Sign Up Successfully");
-    window.location.href="login.html";
+    window.location.href="home.html";
 }
 
 
