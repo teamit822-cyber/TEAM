@@ -259,8 +259,6 @@ button.scroll_left img,button.scroll_right img{
     height: 35px;
 }
 .scroll_left ,.scroll_right {
-    background-color: #ce8e8e;
-    color: #fff;
     border: none;
     width: 34px;
     height: 34px;
