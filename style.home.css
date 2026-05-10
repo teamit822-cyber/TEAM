@@ -153,13 +153,9 @@ body.dark_mode i{
 }
 
 body.dark_mode .scroll_right,body.dark_mode .scroll_left{
-    background-color: #8b5a6b;
-    color: white;
     width: 25px;
     height: 25px;
     padding: 0;
-
-
 }
 
 body.dark_mode main h2,body.dark_mode main h3,body.dark_mode aside h2,body.dark_mode footer p,body.dark_mode footer h3{
