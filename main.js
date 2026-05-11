@@ -142,8 +142,9 @@ window.onload = function(){
 
 
 
-
-document.getElementById("contactform").onsubmit = function(){
+let contactform = document.getElementById("contactform");
+if (contactform){
+    contactform.onsubmit = function(){
     let name = document.getElementById("name").value;
     let emailInput = document.getElementById("email");
     let email = emailInput.value;
@@ -164,7 +165,7 @@ document.getElementById("contactform").onsubmit = function(){
     }
     alert("Message sent Successfully");
     reload.location();
-
+}
 }
 
 
