@@ -545,7 +545,7 @@ transition: ease-in-out;
     border-radius: 10%;
     }
 
-    div.aside_container{
+    div.aside{
         font-size: 20px;
     }
     
@@ -555,7 +555,7 @@ transition: ease-in-out;
     border-radius: 20%;
     }
 
-    body.dark_mode div.aside_container{
+    body.dark_mode div.aside{
         font-size: 17px;
     }
     body.dark_mode img.play_store,body.dark_mode img.apple_store{
