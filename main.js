@@ -155,7 +155,8 @@ document.getElementById("contactform").onsubmit = function(){
        return false;
     }
     if (!emailInput.checkValidity()){
-        alert("Email must contain @");
+        emailInput.reportValidity();
+        // alert("Email must contain @");
         return false;
     }
     if (phone.length !== 11 || isNaN(phone)){
