@@ -245,12 +245,6 @@ article.popular_recipes_article section{
     padding: 0 20px;
 }
 
-.scroll-controls{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
 button.scroll_left img,button.scroll_right img{
     width: 35px;
     height: 35px;
