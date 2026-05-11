@@ -145,10 +145,11 @@ body.dark_mode main{
 .dark_mode{
     background-color: #090000;
     color: #ddd;
-display: -webkit-inline-box!important;
+display: flex!important;
+flex-direction: column  
 gap: 10px;
 padding: 10px;
-overflow-x: auto;
+overflow-x: hidden;
 
 }
 .dark_mode .card{
