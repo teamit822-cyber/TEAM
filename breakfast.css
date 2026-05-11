@@ -94,10 +94,7 @@ body.dark_mode header button.mode_btn {
 .mode_btn img{
    width: 30px;
    height:30px;
-   background-color: white;
-   border-radius: 50%;
-    
-}
+    }
 body.dark_mode header.logo_nav, body.dark_mode footer {
     background-color: #2a1f25;
 }
