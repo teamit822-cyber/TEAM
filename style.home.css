@@ -259,12 +259,7 @@ button.scroll_left img,button.scroll_right img{
     border: none;
     width: 34px;
     height: 34px;
-    border-radius: 50%;
     cursor: pointer;
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
 }
 
 article.why_choose_us,article.cards1{
