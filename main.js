@@ -53,7 +53,6 @@ function signup(){
         return;
     }
     if (!emailInput.checkValidity()){
-        emailInput.reportValidity();
         alert("Email must have @");
         return;
     }
