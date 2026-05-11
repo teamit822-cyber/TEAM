@@ -78,9 +78,6 @@ nav a.active{
 .mode_btn img{
    width: 30px;
    height:30px;
-   background-color: white;
-   border-radius: 50%;
-    
 }
 
 body.dark_mode{
