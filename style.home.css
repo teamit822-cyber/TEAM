@@ -220,7 +220,7 @@ div.popular_recipes_sections{
     justify-content: space-around;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x ;
     flex-wrap: nowrap; /*prevents cards from wrapping*/
     scrollbar-width: none;
    
