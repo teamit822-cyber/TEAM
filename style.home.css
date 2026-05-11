@@ -228,7 +228,6 @@ div.popular_recipes_sections{
   
 article.popular_recipes_article section{
     scroll-snap-align: start;
-    scroll-snap-stop: always;
     padding: 1.5rem;
     background-color: #fff;
     border-radius: 20%;
