@@ -87,7 +87,8 @@ function signup(){
 /*login page*/ 
 
 function login(){
-    let email = document.getElementById("loginEmail").value;
+    let emailInput = document.getElementById("loginEmail");
+    let email = emailInput.value;
     let pass = document.getElementById("loginPass").value;
     let remember = document.getElementById("rem").checked;
     
@@ -102,6 +103,10 @@ function login(){
     if (!email || !pass){
         alert("Please fill all inputs!");
         return ;
+    }
+    if (!emailInput.checkValidity()){
+        alert("Please enter a valid email!");
+        return;
     }
     if (email === storedEmail && pass === storedPass){
         if(remember){
@@ -142,6 +147,8 @@ window.onload = function(){
 
 document.getElementById("contactform").onsubmit = function(){
     let name = document.getElementById("name").value;
+    let emailInput = document.getElementById("email");
+    let email = emailInput.value;
     let phone = document.getElementById("phone").value;
     let message = document.getElementById("message").value;
 
@@ -149,10 +156,17 @@ document.getElementById("contactform").onsubmit = function(){
         alert("PLease fill all fields!");
        return false;
     }
-    else{
+    if (!emailInput.checkValidity()){
+        alert("Email must contain @");
+        return false;
+    }
+    if (phone.length !== 11 || isNaN(phone)){
+        alert("Phone number must be 11 number!");
+        return false;
+    }
     alert("Message sent Successfully");
     return false;
-    }
+
 }
 
 
