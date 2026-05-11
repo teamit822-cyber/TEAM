@@ -53,7 +53,7 @@ function signup(){
         return;
     }
     if (!emailInput.checkValidity()){
-        alert("Email must have @");
+        emailInput.reportValidity();
         return;
     }
     if (phone.length !== 11 || isNaN(phone)){
@@ -103,7 +103,7 @@ function login(){
         return ;
     }
     if (!emailInput.checkValidity()){
-        alert("Please enter a valid email!");
+        emailInput.reportValidity();
         return;
     }
     if (email === storedEmail && pass === storedPass){
@@ -156,7 +156,6 @@ document.getElementById("contactform").onsubmit = function(){
     }
     if (!emailInput.checkValidity()){
         emailInput.reportValidity();
-        // alert("Email must contain @");
         return false;
     }
     if (phone.length !== 11 || isNaN(phone)){
@@ -164,7 +163,7 @@ document.getElementById("contactform").onsubmit = function(){
         return false;
     }
     alert("Message sent Successfully");
-    return false;
+    reload.location();
 
 }
 
