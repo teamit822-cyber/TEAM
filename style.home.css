@@ -250,10 +250,14 @@ button.scroll_left img,button.scroll_right img{
     height: 35px;
     cursor: pointer;
 }
-.scroll_left ,.scroll_right {
-    border-radius: 50%;
+
+.scroll_left,.scroll_right {
     display: flex;
     flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
     align-items: center;
     justify-content: center;
 }
