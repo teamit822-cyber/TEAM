@@ -57,7 +57,7 @@ header.logo_nav nav a.active {
 }
 
 .mode_btn {
-
+    background: transparent;
     border: none;
     cursor: pointer;
     padding: 5px;
