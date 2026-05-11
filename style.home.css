@@ -220,13 +220,14 @@ div.popular_recipes_sections{
     justify-content: space-around;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scroll-snap-type: x ;
+    scroll-snap-type: x mandatory;
     flex-wrap: nowrap; /*prevents cards from wrapping*/
     scrollbar-width: none;
    
 }
   
 article.popular_recipes_article section{
+    scroll-snap-align: start;
     padding: 1.5rem;
     background-color: #fff;
     border-radius: 20%;
