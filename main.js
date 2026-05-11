@@ -55,6 +55,7 @@ function signup(){
     }
     if (!emailInput.checkValidity()){
         emailInput.reportValidity();
+        alert("Email must have @");
         return;
     }
     if (phone.length !== 11 || isNaN(phone)){
