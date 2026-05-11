@@ -128,15 +128,17 @@ function login(){
 window.onload = function(){
     let savedEmail = localStorage.getItem("savedEmail");
     let savedPass = localStorage.getItem("savedPass");
-    if (savedEmail && savedPass){
-        document.getElementById("loginEmail").value = savedEmail;
-        document.getElementById("loginPass").value = savedPass;
-        document.getElementById("rem").checked = true;
+    let emailInput = document.getElementById("loginEmail");
+    let passInput = document.getElementById("loginPass");
+    let remCheck = document.getElementById("rem");
+    if (savedEmail && savedPass && emailInput && passInput){
+        emailInput.value = savedEmail;
+        passInput.value = savedPass;
+        if (remCheck){
+            remCheck.checked = true;
     }
 }
-
-
-
+}
 
 /* contact us page*/
 
