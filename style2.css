@@ -146,10 +146,11 @@ body.dark_mode main{
     background-color: #090000;
     color: #ddd;
 display: flex!important;
-flex-direction: column  
+flex-direction: row;  
 gap: 10px;
 padding: 10px;
 overflow-x: hidden;
+    min-height:100vh;
 
 }
 .dark_mode .card{
@@ -212,6 +213,9 @@ footer {
     margin-top: auto;
     width: 100%;
     box-sizing: border-box;
+}
+.content {
+    flex:1 ;
 }
 
 
