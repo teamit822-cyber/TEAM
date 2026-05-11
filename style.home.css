@@ -447,7 +447,7 @@ transition: ease-in-out;
     text-align: center;
     padding-bottom: 20px;
 }
-.card-img img {
+ img {
     width: 100%;        
     border-radius: 10px;
 }
