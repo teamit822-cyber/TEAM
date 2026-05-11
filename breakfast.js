@@ -80,12 +80,8 @@ function openModal(recipeId) {
     const modal = document.getElementById('recipeModal');
     const data = recipesData[recipeId];
 
-    if (!data) {
-        console.error("Recipe not found:", recipeId);
-        return;
-    }
     
-    document.getElementById('modalTitle').innerText = data.title;
+document.getElementById('modalTitle').innerText = data.title;
     
     const ingredientsList = document.getElementById('modalIngredients');
     ingredientsList.innerHTML = ""; 
