@@ -1,6 +1,34 @@
 
-
 const btn = document.querySelector('.mode_btn');
+const dark = document.getElementById('dark_mode_button');
+const light = document.getElementById('light_mode_button');
+const body = document.body;
+
+if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark_mode');
+    if (dark) dark.style.display = "none";
+    if (light) light.style.display = "block";
+} else if (localStorage.getItem('theme') === 'light') {
+    if (light) light.style.display = "none";
+    if (dark) dark.style.display = "block";
+}
+
+if (btn) {
+    btn.onclick = function() {
+        body.classList.toggle('dark_mode');
+        
+        if (body.classList.contains('dark_mode')) {
+            localStorage.setItem('theme', 'dark');
+            if (dark) dark.style.display = "none";
+            if (light) light.style.display = "block";
+        } else {
+            localStorage.setItem('theme', 'light');
+            if (light) light.style.display = "none";
+            if (dark) dark.style.display = "block";
+        }
+    }
+}
+/*const btn = document.querySelector('.mode_btn');
 const dark=document.getElementById('dark_mode_button');
 const light=document.getElementById('light_mode_button');
 const body = document.body;
@@ -29,7 +57,7 @@ btn.onclick = function(){
         light.style.display="none";
         dark.style.display="block";}
         
-}
+}*/
 
 
 
