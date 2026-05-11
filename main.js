@@ -43,13 +43,22 @@ btn.onclick = function(){
 function signup(){
 
     let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
+    let emailInput = document.getElementById("email");
+    let email = emailInput.value;
     let phone = document.getElementById("phone").value;
     let pass = document.getElementById("pass").value;
     let confirmpass = document.getElementById("confirmpass").value;
 
     if (!name || !email || !phone || !pass || !confirmpass){
         alert("Please fill all inputs!");
+        return;
+    }
+    if (!emailInput.checkValidity()){
+        emailInput.reportValidity();
+        return;
+    }
+    if (phone.length !== 11 || isNaN(phone)){
+        alert("Phone number must be 11 number!");
         return;
     }
     if (pass !== confirmpass){
