@@ -1,24 +1,10 @@
-        function openModal(id) {
-  document.getElementById(id).style.display = "block";
-}
-
-function closeModal(id) {
-  document.getElementById(id).style.display = "none";
-}
-
-window.onclick = function(event) {
-  let modals = document.getElementByClass('modal');
-  for (let i = 0; i < modals.length; i++) {
-    if (event.target == modals[i]) {
-      modals[i].style.display = "none";
-    }
-  }
-}
-
 
 const btn = document.querySelector('.mode_btn');
+
 const dark=document.getElementById('dark_mode_button');
+
 const light=document.getElementById('light_mode_button');
+
 const body = document.body;
 
 if(localStorage.getItem('theme')==='dark'){
@@ -28,6 +14,9 @@ if(localStorage.getItem('theme')==='dark'){
 if(localStorage.getItem('theme')==='light'){
     light.style.display="none";
 }
+
+
+
 btn.onclick = function(){
     body.classList.toggle('dark_mode');
     
@@ -49,4 +38,22 @@ btn.onclick = function(){
         results_box.style.display="block";
         results_box.innerHTML= html;
     }
+
+}
+
+  function openModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+window.onclick = function(event) {
+  let modals = document.getElementByClass('modal');
+  for (let i = 0; i < modals.length; i++) {
+    if (event.target == modals[i]) {
+      modals[i].style.display = "none";
+    }
+  }
 }
